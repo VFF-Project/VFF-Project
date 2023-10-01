@@ -4,8 +4,13 @@ import laravel from 'laravel-vite-plugin';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
+            input: ['resources/css/general.css', 'resources/css/index/index.css', 'resources/js/index/indexImport.js'],
             refresh: true,
         }),
     ],
+    server: {
+        hmr: {
+            host: '192.168.1.37',
+        }
+    }
 });

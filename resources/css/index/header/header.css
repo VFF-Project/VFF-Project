@@ -1,0 +1,43 @@
+header{
+    height: 200vh;
+}
+header .header-background{
+    position: sticky;
+    height: 100vh;
+    background-image: url("../../../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    top: 0;
+}
+header .header-background nav{
+    position: absolute;
+    z-index: 1;
+}
+header .header-background nav.nav-fixed{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+}
+header nav{
+    height: 72px;
+}
+header .header-background .header-images{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(9px);
+}
+header .header-background .header-images figure {
+    width: 20vw;
+}
+header .header-background .header-images figure img{
+    width: 100%;
+}
+.left-tgv{
+    transform: translateX(-1vw);
+}
+.right-tgv{
+    transform: translateX(1vw);
+}
