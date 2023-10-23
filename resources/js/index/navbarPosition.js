@@ -4,14 +4,14 @@ const navbar = document.querySelector("header nav")
 let navbarcallback = (entries, observer) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            navbar.classList.remove("nav-fixed")
+            navbar.style.opacity = 0;
         } else {
-            navbar.classList.add("nav-fixed")
+            navbar.style.opacity = 1;
         }
     })
 }
 const options = {
-    threshold: 0.1,
+    threshold: 0.07,
 }
 const myObserver = new IntersectionObserver(navbarcallback, options)
 myObserver.observe(header)

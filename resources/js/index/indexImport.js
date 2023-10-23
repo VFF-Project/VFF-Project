@@ -1,3 +1,5 @@
 import "./scrollTGV.js"
 import "./scrollAnimation.js"
 import "./navbarPosition.js"
+import "./scrollButton.js"
+import "./darkModeIndex.js"

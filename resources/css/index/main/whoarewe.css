@@ -10,7 +10,7 @@ main #whoarewe > *{
 }
 main #whoarewe.animate > *{
     opacity: 1;
-    transform: translateX(0);
+    transform: initial;
 }
 main #whoarewe.animate p{
     transition-delay: 0.075s;
@@ -47,8 +47,8 @@ main #whoarewe .whoarewe-buttons a{
     display: inline-block;
     white-space: nowrap;
     outline: none;
-    transition: all .3s ease 0s;
-    transform: scale(1);
+    transition: transform .3s ease 0s;
+    transform: initial;
     color: #fff;
     background-color: #ff6500;
     font-family: Gabarito, cursive;
@@ -56,4 +56,7 @@ main #whoarewe .whoarewe-buttons a{
 main #whoarewe .whoarewe-buttons a:hover{
     text-decoration: none;
     transform: scale(.95);
+}
+main #whoarewe .whoarewe-buttons a:focus{
+    outline: solid #ff6500;
 }

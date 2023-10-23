@@ -1,0 +1,63 @@
+main #maps .maps-background{
+    background-color:#ff6500;
+    position:absolute;
+    width:100%;
+    height:80%;
+    left:0;
+    transform:skewY(-10deg) scaleY(.4);
+    transform-origin:center center;
+    z-index:-1
+}
+main #maps .maps-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+main #maps .maps-container .maps-box{
+    position: relative;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 340px;
+    display: inline-block;
+}
+main #maps .maps-container .maps-box div{
+    background-color:#fcfcfd;
+    border-radius:10px;
+    padding:65px 27px 27px;
+    box-shadow: -1px 8px 18px rgba(0,0,0,.08);
+}
+main #maps .maps-container .maps-box div figure{
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    left: 50%;
+    margin-left: -44px;
+    top: -44px;
+    border-radius: 200px;
+    overflow: hidden;
+    z-index: 2;
+    background-color: transparent;
+}
+main #maps .maps-container .maps-box div figure img{
+    width: 100%;
+    height: 100%;
+}
+main #maps .maps-container .maps-box div h2{
+    font-size: 18px;
+    color: #000000;
+    background-color: #e8ecec;
+    border-radius: 10px;
+    padding: 3px 15px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+main #maps .maps-container .maps-box div p{
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    text-align: justify;
+}
