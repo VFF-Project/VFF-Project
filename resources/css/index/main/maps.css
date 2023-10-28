@@ -1,3 +1,12 @@
+main #maps > *{
+    opacity: 0;
+    transform: translateX(100%);
+}
+main #maps.animate > *{
+    opacity: 1;
+    transform: initial;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
 main #maps .maps-background{
     background-color:#ff6500;
     position:absolute;
@@ -39,7 +48,7 @@ main #maps .maps-container .maps-box div figure{
     top: -44px;
     border-radius: 200px;
     overflow: hidden;
-    z-index: 2;
+    z-index: 1;
     background-color: transparent;
 }
 main #maps .maps-container .maps-box div figure img{

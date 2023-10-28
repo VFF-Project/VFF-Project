@@ -1,14 +1,20 @@
 const whoarewe = document.querySelector("#whoarewe")
+const maps = document.querySelector("#maps")
 
-const whoarewecallback = (entries, observer) => {
+const calback = (entries, observer) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
+            entry.target.classList.remove("noTranslate")
+            setTimeout(() =>{
             entry.target.classList.add("animate")
+            }, 20)
         }
     })
 }
 const options = {
     threshold: 0.5,
 }
-const myObserver = new IntersectionObserver(whoarewecallback, options)
-myObserver.observe(whoarewe)
+const whoareweObserver = new IntersectionObserver(calback, options)
+whoareweObserver.observe(whoarewe)
+const mapsObserver = new IntersectionObserver(calback, options)
+mapsObserver.observe(maps)

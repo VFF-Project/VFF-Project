@@ -6,11 +6,11 @@ main #whoarewe {
 main #whoarewe > *{
     opacity: 0;
     transform: translateX(100%);
-    transition: opacity 1.5s ease, transform 1.5s ease;
 }
 main #whoarewe.animate > *{
     opacity: 1;
     transform: initial;
+    transition: opacity 1.5s ease, transform 1.5s ease;
 }
 main #whoarewe.animate p{
     transition-delay: 0.075s;

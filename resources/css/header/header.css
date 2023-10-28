@@ -4,7 +4,7 @@ header{
 header .header-background{
     position: sticky;
     height: 100vh;
-    background-image: url("../../../images/background.png");
+    background-image: url("../../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -24,7 +24,7 @@ header .header-background nav{
     transition: opacity 1s ease;
     background-color: white;
     color: black;
-    box-shadow: 0 4px 8px #D3D3D3;
+    box-shadow: 0 2px 8px #D3D3D3;
 }
 header .header-background nav .nav-title{
     display: flex;
